@@ -1,0 +1,40 @@
+create table leave (
+    leave_id int primary key auto_increment,
+    project_id int,
+    project_name varchar (30) not null,
+    emp_id int,
+    project_manager varchar (30) not null,
+    leave_type varchar (30) not null,
+    reason varchar (30) not null,
+    status varchar (30) not null
+)
+
+
+create table project (
+    project_name varchar (30) not null,
+    status varchar (30) not null,
+    client varchar (30) not null
+)
+
+create table credit_card (
+    emp_id int,
+    first_name varchar (30) not null,
+    last_name varchar (30) not null,
+    card_num varchar (30) not null,
+    expire_date datetime,
+    cvv varchar (10) not null
+)
+
+create table logs (
+    log_id int primary key auto_increment,
+    emp_id int,
+    clock_in varchar (15) not null,
+    clock_out varchar (15) not null,
+    date datetime
+)
+
+create table admin (
+    admin_id int primary key auto_increment,
+    first_name varchar (30) not null,
+    last_name varchar (30) not null
+)
