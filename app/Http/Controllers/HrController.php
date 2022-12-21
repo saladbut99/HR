@@ -42,6 +42,9 @@ class HrController extends Controller
 
     }
   
+    public function show_leave(){
+        
+    }
         
 
 }
